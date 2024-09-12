@@ -1,0 +1,120 @@
+body{
+    display: flexbox;
+    background-image:linear-gradient(to right, rgb(97, 31, 190), rgba(27, 63, 205, 0.61));
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Form CSS */
+.formContainer{
+
+    height: 300px;
+    width: 500px;
+    /* border-radius: 10%; */
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    display: block;
+}
+
+h2{
+    color: #fff;
+    left: 50%;
+    font-weight: lighter;
+}
+
+.dataContainer{
+    background-color: #fff;
+    width: 92%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}.dataContainer:hover{scale: 1.02;}
+
+
+input[type='text'], input[type='password'], input[type='email']{
+
+    width: 100%;
+    align-self: center;
+    border: none;
+
+    outline: none;
+    font-size: 13px;
+}
+
+input::placeholder{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.userSignIn button{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.userSignIn button:hover{
+    scale: 1.02;
+}
+
+#forgotPWD a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    justify-self: center;
+}
+#forgotPWD a:hover{
+    text-decoration: underline;
+}
+#backtoLogin a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    justify-self: center;
+}
+#backtoLogin a:hover{
+    text-decoration: underline;
+}
+
+
+/* social bar  */
+
+.icon-bar {
+    position: fixed;
+    top: 30%;
+    z-index: 1;
+    left: 0;
+  }
+  
+  .icon-bar a {
+    display: block;
+
+    padding: 16px;
+    transition: all 1s ease;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .icon-bar a:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 1px 0px;
+    transition: 0.1s ease-in-out;
+  }
+  
+  .social_media {
+    background: #000;
+    color: #fff;
+    /* margin: 1px; */
+  }
