@@ -1,5 +1,4 @@
 body{
-    display: flexbox;
     background-image:linear-gradient(to right, rgb(97, 31, 190), rgba(27, 63, 205, 0.61));
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
@@ -11,8 +10,6 @@ body{
 
     height: 300px;
     width: 500px;
-    /* border-radius: 10%; */
-    /* border: 1px solid black; */
     align-items: center;
     justify-content: center;
     margin-top: 200px;
@@ -88,7 +85,6 @@ input::placeholder{
     text-decoration: underline;
 }
 
-
 /* social bar  */
 
 .icon-bar {
@@ -100,7 +96,6 @@ input::placeholder{
   
   .icon-bar a {
     display: block;
-
     padding: 16px;
     transition: all 1s ease;
     color: white;
@@ -116,5 +111,4 @@ input::placeholder{
   .social_media {
     background: #000;
     color: #fff;
-    /* margin: 1px; */
   }

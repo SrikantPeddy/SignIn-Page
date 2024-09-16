@@ -1,39 +1,40 @@
+document.addEventListener("DOMContentLoaded", () => {
 
-// tempID = document.getElementById("formID").addEventListener("click",    
-function showAlert() {
-
+var btnIndex =document.getElementById("formBtn");
+btnIndex.addEventListener('click', function(){    
+        const username = document.getElementById("user_name");
+        const pswd = document.getElementById("user_pwd");
     
-    const name = document.getElementById("user_name").value;
-    const pswd = document.getElementById("user_pwd").value;
-    // event.preventDefault();
-
-    if(name == null || (name.length < 4 || name.length > 20)){
-        alert(`Incompatible Username`);
-        return;
-    }
-    else if(pswd == null || (pswd.length < 9 || pswd.length > 20)){
-        alert(`Incompatible Password`);
-        return;
-    }
-    else if((name == null || (name.length < 4 || name.length > 20)) && (pswd == null || (pswd.length < 9 || pswd.length > 20))){
-        alert(`Incompatible Username and Password`);
-    }
-    else{window.alert(`Login successful`);
-        alert(`User - (${name})`)
-    }
-
-    console.log(name);
-
-};
-function showAlertfp(){
-    const email = document.getElementById('user_email').value;
-
-    if(email == null || email.length < 5){alert("Re-verify the email to correct one.");}
-    else{
-    document.getElementById('messageID').innerHTML="Thank you for your time. You will receive updates to above given email.";
-    event.preventDefault();
-
-    }
+        if(username.value.length < 4 || username.value.length > 20){
+            console.log("Inside 1");
+            alert(`Incompatible Username`);
+        }
+        else if(pswd.value.length < 9 || pswd.value.length > 20){
+            console.log("Inside 2");
+            alert(`Incompatible Password`);
+        }
+        else{alert(`Login successful`);
+            alert(`User - (${username.value})`);
+        }
     
+    });
 
-}
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+var btnForgot = document.getElementById("forgotBtn");
+
+btnForgot.addEventListener('click', function(){
+    const useremail = document.getElementById("user_email");
+    const validExpressionCheck = /^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+    if(!(useremail.value.match(validExpressionCheck))){
+        console.log("Inside forgot listener");
+        alert(`incompatible Email. Try again`);
+
+    }else{document.getElementById('messageID').innerHTML="Thank you for your time. You will receive updates to above given email.";
+        event.preventDefault();
+    }
+
+    });
+});
